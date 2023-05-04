@@ -43,6 +43,7 @@ const manageRecipes = async () => {
     console.log("Success! New pasta time.");
 
     await Recipe.deleteOne({ title: "Carrot Cake" });
+    console.log("YAY, no more Carrot Cake!");
 
     mongoose.connection.close();
   } catch (error) {
